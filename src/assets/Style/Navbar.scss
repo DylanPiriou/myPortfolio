@@ -1,0 +1,21 @@
+@import "./Settings.scss";
+
+.navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #F1F1F1;
+}
