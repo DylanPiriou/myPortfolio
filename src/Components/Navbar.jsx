@@ -10,7 +10,7 @@ export default function Navbar() {
     <div className="navbar">
         <NavLink to="/" className="home-title">@dylanpiriou/{param}</NavLink>
         <nav>
-            <a href="#" className="link">ABOUT</a>
+            <a href="#about" className="link">ABOUT</a>
             <NavLink to="/projects" className="link">PROJECTS</NavLink>
             <NavLink to="/contact" className="link">CONTACT</NavLink>
         </nav>

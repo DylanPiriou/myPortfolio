@@ -10,67 +10,122 @@
         height: calc(100vh - 12vh);
         margin-bottom: 12vh;
         display: block;
-    }
 
-    .main-img{
-        position: fixed;
-        top: 12vh;
-        bottom: 0;
-        width: 36vw;
-        height: 100vh;
-        object-fit: cover;
-    }
-
-    .header-content{
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 6vh;
-    }
-
-    h1{
-        font-size: clamp(55px, 10vw, 110px);
-        mix-blend-mode: difference;
-    }
-
-    p{
-        font-size: 14px;
-        color: $alt-fontColor;
-    }
-
-    .scroll-info{
-        position: absolute;
-        bottom: 6vh;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        gap: 50px;
-
-        .arrow-icon{
-            height: 80px;
-            animation: arrow-movement 2s ease-in-out infinite;
+        .main-img{
+            position: fixed;
+            top: 12vh;
+            bottom: 0;
+            width: 36vw;
+            height: 100vh;
+            object-fit: cover;
         }
+    
+        .header-content{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 6vh;
+        }
+    
+        h1{
+            font-size: clamp(55px, 10vw, 140px);
+            mix-blend-mode: difference;
+        }
+    
+        p{
+            font-size: 14px;
+            color: $alt-fontColor;
+        }
+    
+        .scroll-info{
+            position: absolute;
+            bottom: 5vh;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 50px;
+    
+            .arrow-icon{
+                height: 80px;
+                animation: arrow-movement 2s ease-in-out infinite;
+            }
+    
+            @keyframes arrow-movement {
+                0% {
+                  transform: translateY(0);
+                }
+                50% {
+                  transform: translateY(-40px);
+                }
+                100% {
+                  transform: translateY(0);
+                }
+              }
+        }
+    
+    }
 
-        @keyframes arrow-movement {
-            0% {
-              transform: translateY(0);
+
+    main{
+        .about-container{
+            width: 100%;
+            height: calc(100vh - 12vh);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .about-content{
+                width: 60%;
+                height: 100%;
+                padding: 50px;
+
+                h2{
+                    font-size: 100px;
+                    margin-bottom: 50px;
+                }
+
+                p{
+                    line-height: 25px;
+                }
+
+                .contact-button{
+                    border: none;
+                    outline: 1px solid orange;
+                    border-radius: 50px;
+                    display: block;
+                    margin-top: 80px;
+                    padding: 15px 50px;
+                    background: none;
+                    cursor: pointer;
+                    transition: background .5s ease;
+                    
+                    a{
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: orange;
+                        transition: color .5s ease;
+                    }
+
+                    &:hover{
+                        background: orange;
+
+                    }
+
+                    &:hover a{
+                        color: $main-fontColor;
+                    }
+                }
             }
-            50% {
-              transform: translateY(-40px);
-            }
-            100% {
-              transform: translateY(0);
-            }
-          }
+        }
     }
 
 }
