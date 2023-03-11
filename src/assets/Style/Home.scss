@@ -1,0 +1,26 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .main-img{
+        display: block;
+        width: 40%;
+        height: calc(100vh - 12vh);
+        object-fit: cover;
+        z-index: 10;
+    }
+
+    h1{
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 6vw;
+        mix-blend-mode: difference;
+        z-index: 100;
+    }
+}
+
+
+
