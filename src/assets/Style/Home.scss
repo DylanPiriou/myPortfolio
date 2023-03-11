@@ -1,33 +1,78 @@
+@import "./Settings.scss";
+
 .home{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    // display: flex;
+    // flex-direction: column;
+
+    header{
+        position: relative;
+        top: 12vh;
+        height: calc(100vh - 12vh);
+        margin-bottom: 12vh;
+        display: block;
+    }
 
     .main-img{
-        display: block;
-        width: 40%;
-        height: calc(100vh - 12vh);
+        position: fixed;
+        top: 12vh;
+        bottom: 0;
+        width: 36vw;
+        height: 100vh;
         object-fit: cover;
-        z-index: 10;
+    }
+
+    .header-content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 6vh;
     }
 
     h1{
-        position: absolute;
-        top: 40%;
-        left: 45%;
-        transform: translate(-50%, -50%);
-        font-size: 6vw;
+        font-size: clamp(55px, 10vw, 110px);
         mix-blend-mode: difference;
-        z-index: 100;
     }
 
-    h2{
+    p{
+        font-size: 14px;
+        color: $alt-fontColor;
+    }
+
+    .scroll-info{
         position: absolute;
         bottom: 6vh;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 14px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 50px;
+
+        .arrow-icon{
+            height: 80px;
+            animation: arrow-movement 2s ease-in-out infinite;
+        }
+
+        @keyframes arrow-movement {
+            0% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-40px);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
     }
+
 }
 
 

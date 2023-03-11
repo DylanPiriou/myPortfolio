@@ -1,23 +1,29 @@
 @import "./Settings.scss";
 
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 12vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 5vw;
+    background: $main-bgColor;
+    z-index: 100;
 
     nav{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 2vw;
     }
 
     .home-title,
     .link{
     text-decoration: none;
-    color: #F1F1F1;
+    color: $alt-fontColor;
     }
 }
 
