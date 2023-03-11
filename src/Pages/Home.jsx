@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import "../assets/Style/Home.scss";
+import { getYear } from '../utils/getYear';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
             <br />
             <span>Developer</span>
         </h1>
+        <h2>Welcome to my {getYear()} portfolio.</h2>
     </div>
   )
 }

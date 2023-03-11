@@ -20,6 +20,14 @@
         mix-blend-mode: difference;
         z-index: 100;
     }
+
+    h2{
+        position: absolute;
+        bottom: 6vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+    }
 }
 
 
