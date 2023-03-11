@@ -1,42 +1,39 @@
 @import "./Settings.scss";
 
 .home{
-    // display: flex;
-    // flex-direction: column;
-
     header{
         position: relative;
-        top: 12vh;
-        height: calc(100vh - 12vh);
-        margin-bottom: 12vh;
-        display: block;
+        height: 100vh;
 
         .main-img{
             position: fixed;
-            top: 12vh;
+            top: 0;
             bottom: 0;
             width: 36vw;
             height: 100vh;
             object-fit: cover;
+            filter: grayscale(5);
         }
     
         .header-content{
             position: absolute;
-            top: 0;
+            top: 12vh;
             right: 0;
             left: 0;
             bottom: 0;
-            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding-bottom: 6vh;
         }
     
         h1{
             font-size: clamp(55px, 10vw, 140px);
             mix-blend-mode: difference;
+        }
+
+        .edited{
+            color: #CFFF20;
         }
     
         p{
@@ -55,7 +52,7 @@
             gap: 50px;
     
             .arrow-icon{
-                height: 80px;
+                height: 60px;
                 animation: arrow-movement 2s ease-in-out infinite;
             }
     
@@ -76,12 +73,14 @@
 
 
     main{
+        // margin-top: 12vh;
         .about-container{
             width: 100%;
             height: calc(100vh - 12vh);
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            margin-top: 20vh;
 
             .about-content{
                 width: 60%;
@@ -89,7 +88,7 @@
                 padding: 50px;
 
                 h2{
-                    font-size: 100px;
+                    font-size: 80px;
                     margin-bottom: 50px;
                 }
 
@@ -97,9 +96,13 @@
                     line-height: 25px;
                 }
 
+                p:first-of-type{
+                    text-indent: 2em;
+                }
+
                 .contact-button{
                     border: none;
-                    outline: 1px solid orange;
+                    outline: 1px solid $sec-fontColor;
                     border-radius: 50px;
                     display: block;
                     margin-top: 80px;
@@ -111,12 +114,12 @@
                     a{
                         text-decoration: none;
                         font-size: 20px;
-                        color: orange;
+                        color: $sec-fontColor;
                         transition: color .5s ease;
                     }
 
                     &:hover{
-                        background: orange;
+                        background: $sec-fontColor;
 
                     }
 

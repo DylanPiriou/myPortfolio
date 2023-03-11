@@ -22,8 +22,12 @@
 
     .home-title,
     .link{
-    text-decoration: none;
-    color: $alt-fontColor;
+        text-decoration: none;
+        color: $alt-fontColor;
+
+        .edited{
+            color: $sec-fontColor;
+        }
     }
 }
 

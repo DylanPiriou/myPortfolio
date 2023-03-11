@@ -16,7 +16,7 @@ export default function Home() {
                 <br />
                 <span>Im a FrontEnd</span>
                 <br />
-                <span>Developer</span>
+                <span className="edited">Developer</span>
             </h1>
             <p>Welcome to my {getYear()} portfolio.</p>
           </div>

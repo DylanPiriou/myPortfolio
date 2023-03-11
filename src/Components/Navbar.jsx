@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-        <NavLink to="/" className="home-title">@dylanpiriou/{param}</NavLink>
+        <NavLink to="/" className="home-title">@dylanpiriou/<span className="edited">{param}</span></NavLink>
         <nav>
             <a href="#about" className="link">ABOUT</a>
             <NavLink to="/projects" className="link">PROJECTS</NavLink>
