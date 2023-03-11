@@ -8,7 +8,7 @@ export default function Projects() {
     <div className="projects">
       <Navbar/>
       <section className="projects-container">
-        <h2>Selected works</h2>
+        <h2>Selected <span className="serif-font">works</span></h2>
         <GridCards/>
       </section>
     </div>

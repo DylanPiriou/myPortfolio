@@ -14,7 +14,7 @@ export default function Home() {
             <h1>
                 <span>Hello,</span>
                 <br />
-                <span>Im a FrontEnd</span>
+                <span>Im a <span className="serif-font">FrontEnd</span></span>
                 <br />
                 <span className="edited">Developer</span>
             </h1>
@@ -22,13 +22,13 @@ export default function Home() {
           </div>
           <div className="scroll-info">
             <img src="arrow.svg" className="arrow-icon" alt="" />
-            <p>SCROLL TO BEGIN YOUR JOURNEY</p>
+            <p>SCROLL TO DISCOVER ME</p>
           </div>
         </header>
         <main>
           <section className="about-container" id="about">
             <div className="about-content">
-              <h2>About me</h2>
+              <h2><span className="serif-font">About</span>&nbsp;me</h2>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt non, mollitia laboriosam natus recusandae, tempora quae culpa fuga debitis aperiam ipsum dolores error, deleniti necessitatibus harum repudiandae ratione ab at assumenda tempore. Facilis debitis quo ab inventore quae, illo expedita perferendis laboriosam blanditiis, dolores illum consequatur sequi dolor, tempora maiores.</p>
               <br />
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, repellat nobis laudantium pariatur repudiandae dolor veniam tenetur praesentium, consequuntur, dolore earum. Alias natus magni quasi sunt ipsam sapiente accusantium deserunt quis, dignissimos aperiam, rem accusamus repellat. Quisquam, ipsum doloribus soluta ab eligendi corporis. Quo iste quis, delectus itaque illum numquam temporibus quibusdam doloribus voluptas cupiditate, voluptatum obcaecati debitis ex officia nisi! Amet, hic. At velit dolorem incidunt placeat, laudantium ut porro iste? Explicabo accusantium excepturi eum molestias voluptas eius nihil.</p>

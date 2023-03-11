@@ -1,5 +1,5 @@
 @import "./Settings.scss";
-
+               
 .home{
     header{
         position: relative;
@@ -30,10 +30,10 @@
         h1{
             font-size: clamp(55px, 10vw, 140px);
             mix-blend-mode: difference;
-        }
-
-        .edited{
-            color: #CFFF20;
+    
+            .edited{
+                color: #CFFF20;
+            }
         }
     
         p{
@@ -89,19 +89,19 @@
 
                 h2{
                     font-size: 80px;
-                    margin-bottom: 50px;
+                    margin-bottom: 20px;
                 }
 
                 p{
                     line-height: 25px;
                 }
-                
+
                 .contact-button{
                     border: none;
                     outline: 1px solid $sec-fontColor;
                     border-radius: 50px;
                     display: block;
-                    margin-top: 80px;
+                    margin-top: 100px;
                     padding: 15px 50px;
                     background: none;
                     cursor: pointer;
@@ -120,11 +120,16 @@
                     }
 
                     &:hover a{
-                        color: $main-fontColor;
+                        color: black;
                     }
                 }
             }
         }
+    }
+
+    .serif-font{
+        font-family: $alt-ffamily;
+                                            
     }
 
 }
