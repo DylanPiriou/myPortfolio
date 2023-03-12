@@ -1,9 +1,118 @@
+@import "./Settings.scss";
+
 .projectDetails{
-    h1{
-        font-size: 60px;
+    position: relative;
+    top: 12vh;
+    height: calc(100vh - 12vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+
+    h2{
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        width: 100%;
+        font-size: 110px;
+        // background: red;
     }
 
-    img{
-        width: 20%;
+    .project-container{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .project-img{
+            width: 30%;
+            height: 100%;
+            background: crimson;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .project-infos{
+            width: 70%;
+            height: 100%;
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 20px;
+
+            .title-box{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: baseline;
+                justify-content: center;
+
+                h3{
+                    font-size: 42px;
+                }
+
+                span{
+                    color: $sec-fontColor;
+                }
+            }
+
+            .tags-box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                .tag{
+                    background: $sec-fontColor;
+                    color: black;
+                    padding: 5px 20px;
+                    border-radius: 50px;
+                }
+            }
+
+            ul li{
+                list-style-type: square;
+                list-style-position: inside;
+            }
+
+            p{
+                line-height: 25px;
+            }
+
+            .buttons-box{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+
+                button,
+                .github-btn{
+                    width: 20%;
+                    height: 50px;
+                    font-family: $font-family;
+                    border-radius: 50px;
+                    background: none;
+                    font-size: 20px;
+                }
+
+                .github-btn{
+                    color: $main-fontColor;
+                    border: 2px solid $main-fontColor;
+                }
+
+                button{
+                    color: $sec-fontColor;
+                    border: 2px solid $sec-fontColor;
+                }
+            }
+        }
     }
 }
