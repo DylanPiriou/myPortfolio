@@ -1,0 +1,11 @@
+@import "./Settings.scss";
+
+h2{
+    color: white;
+    font-size: clamp(60px, 15vw, 150px);
+
+    .serif-font{
+        font-family: $alt-ffamily;
+                                            
+    }
+}
