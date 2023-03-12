@@ -1,27 +1,14 @@
 import React from 'react';
 import "../assets/Style/GridCards.scss";
+import Data from "../Data/data.json";
+import Card from './Card';
 
 export default function GridCards() {
   return (
     <div className="projects-grid">
-        <div className="card">
-            <h3>TEST</h3>
-        </div>
-        <div className="card">
-            <h3>TEST</h3>
-        </div>
-        <div className="card">
-            <h3>TEST</h3>
-        </div>
-        <div className="card">
-            <h3>TEST</h3>
-        </div>
-        <div className="card">
-            <h3>TEST</h3>
-        </div>
-        <div className="card">
-            <h3>TEST</h3>
-        </div>
+        {Data.map((data, index) => {
+            return <Card key={index} data={data} />
+        })}
     </div>  
   )
 }

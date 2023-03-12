@@ -20,14 +20,18 @@
         gap: 2vw;
     }
 
-    .home-title,
-    .link{
+    .home-title{
+        color: $main-fontColor;
         text-decoration: none;
-        color: $alt-fontColor;
 
         .edited{
             color: $sec-fontColor;
         }
+    }
+
+    .link{
+        color: $alt-fontColor;
+        text-decoration: none;
     }
 }
 
