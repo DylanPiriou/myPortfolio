@@ -1,25 +1,30 @@
 [
     {
         "id": 1,
-        "title": "Pervigil vicinarum oppleta.",
-        "subtitle": "Illa si quantum natura quae potest quale tempus quodam sensus.",
+        "title": "MovieHub",
+        "subtitle": "Cinema application like Netflix.",
         "cover": "/img-template.jpg",
-        "pictures": [
-            "/img-template.jpg",
-            "/img-template.jpg"
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "ReactJS",
+            "API"
         ],
-        "date": "2023",
+        "date": "2022",
         "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
 
     },
     {
         "id": 2,
-        "title": "Pervigil vicinarum oppleta.",
-        "subtitle": "Illa si quantum natura quae potest quale tempus quodam sensus.",
+        "title": "Portfolio Sophie Bluel",
+        "subtitle": "Dynamic web page for a Photographer.",
         "cover": "/img-template.jpg",
-        "pictures": [
-            "/img-template.jpg",
-            "/img-template.jpg"
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "API"
         ],
         "date": "2023",
         "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
@@ -27,12 +32,13 @@
     },
     {
         "id": 3,
-        "title": "Pervigil vicinarum oppleta.",
-        "subtitle": "Illa si quantum natura quae potest quale tempus quodam sensus.",
+        "title": "Nina Carducci's website",
+        "subtitle": "Debug and optimize a photographer's website.",
         "cover": "/img-template.jpg",
-        "pictures": [
-            "/img-template.jpg",
-            "/img-template.jpg"
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
         ],
         "date": "2023",
         "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
@@ -40,12 +46,14 @@
     },
     {
         "id": 4,
-        "title": "Pervigil vicinarum oppleta.",
-        "subtitle": "Illa si quantum natura quae potest quale tempus quodam sensus.",
+        "title": "Kasa website",
+        "subtitle": "Real estate rental web application.",
         "cover": "/img-template.jpg",
-        "pictures": [
-            "/img-template.jpg",
-            "/img-template.jpg"
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "ReactJS"
         ],
         "date": "2023",
         "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
@@ -53,12 +61,14 @@
     },
     {
         "id": 5,
-        "title": "Pervigil vicinarum oppleta.",
-        "subtitle": "Illa si quantum natura quae potest quale tempus quodam sensus.",
+        "title": "Mon Vieux Grimoire's backend",
+        "subtitle": "Backend of a book review website.",
         "cover": "/img-template.jpg",
-        "pictures": [
-            "/img-template.jpg",
-            "/img-template.jpg"
+        "tags": [
+            "NodeJS",
+            "Express",
+            "MongoDB",
+            "ReactJS"
         ],
         "date": "2023",
         "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."

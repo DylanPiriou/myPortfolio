@@ -53,27 +53,30 @@
                 flex-direction: row-reverse;
                 align-items: baseline;
                 justify-content: center;
+                gap: 10px;
 
                 h3{
-                    font-size: 42px;
+                    font-size: 26px;
                 }
 
                 span{
+                    font-size: 42px;
                     color: $sec-fontColor;
                 }
             }
 
             .tags-box{
+                width: 100%;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
                 gap: 10px;
 
                 .tag{
-                    background: $sec-fontColor;
-                    color: black;
-                    padding: 5px 20px;
-                    border-radius: 50px;
+                padding: 5px 15px;
+                border-radius: 50px;
+                background: $sec-fontColor;
+                color:  black;
                 }
             }
 
@@ -95,8 +98,7 @@
 
                 button,
                 .github-btn{
-                    width: 20%;
-                    height: 50px;
+                    padding: 10px 20px;
                     font-family: $font-family;
                     border-radius: 50px;
                     background: none;

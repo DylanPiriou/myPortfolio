@@ -13,19 +13,23 @@ export default function ProjectDetails() {
       <Navbar/>
         <h2>{projectsData.title}</h2>
         <div className="project-container">
+
           <div className="project-img">
             <img src={projectsData.cover} alt="" />
           </div>
+
           <div className="project-infos">
             <div className="title-box">
-              <h3>Lorem ipsum dolor sit amet.</h3>
+              <h3>{projectsData.subtitle}</h3>
               <span>{projectsData.date}.</span>
             </div>
+
             <div className="tags-box">
-              <div className="tag">HTML</div>
-              <div className="tag">CSS</div>
-              <div className="tag">JS</div>
+              {projectsData.tags.map((tag, index) => {
+                return <div className="tag" key={index}>{tag}</div>
+              })}
             </div>
+
             <ul>
               <li>gggggg</li>
               <li>ggggggggg</li>
