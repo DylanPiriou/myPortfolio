@@ -19,7 +19,7 @@
         height: 100%;
         background-position: center;
         object-fit: cover;
-        filter: brightness(90%);
+        filter: brightness(60%);
         transition: transform .3s ease;
     }
 
@@ -39,7 +39,7 @@
         justify-content: center;
         padding: 20px;
         color: $main-fontColor;
-        background: rgba(0, 0, 0, 0.74);
+        background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.05));
 
         h3{
             font-size: 30px;

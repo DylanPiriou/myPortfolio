@@ -14,7 +14,9 @@ export default function Contact() {
         <Navbar/>
       <div className="contact-container">
         <PageTitle title={title} />
-        <img src="/contact-hero.jpg" alt="image of a vintage phone" />
+        <div className="img-box">
+          <img src="/contact-hero.jpg" alt="image of a vintage phone" />
+        </div>
         <Networks/>
       </div>
     </div>

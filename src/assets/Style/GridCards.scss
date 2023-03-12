@@ -1,6 +1,8 @@
 @import "./Settings.scss";
 
 .projects-grid{
+    position: absolute;
+    left: 0;
     width: 100%;
     height: auto;
     display: flex;
