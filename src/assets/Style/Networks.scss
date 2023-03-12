@@ -1,0 +1,29 @@
+@import "./Settings.scss";
+
+.networks{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+
+    .network{
+        color: $main-fontColor;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        i{
+            border: 1px solid $sec-fontColor;
+            border-radius: 50px;
+            padding: 10px;
+        }
+        
+        p{
+            margin-top: 10px;
+        }
+    }
+}

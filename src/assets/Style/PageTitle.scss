@@ -3,6 +3,7 @@
 h2{
     color: white;
     font-size: clamp(60px, 15vw, 150px);
+    z-index: 100;
 
     .serif-font{
         font-family: $alt-ffamily;
