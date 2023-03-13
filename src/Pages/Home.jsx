@@ -35,7 +35,6 @@ export default function Home() {
               <br />
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, repellat nobis laudantium pariatur repudiandae dolor veniam tenetur praesentium, consequuntur, dolore earum. Alias natus magni quasi sunt ipsam sapiente accusantium deserunt quis, dignissimos aperiam, rem accusamus repellat. Quisquam, ipsum doloribus soluta ab eligendi corporis. Quo iste quis, delectus itaque illum numquam temporibus quibusdam doloribus voluptas cupiditate, voluptatum obcaecati debitis ex officia nisi! Amet, hic. At velit dolorem incidunt placeat, laudantium ut porro iste? Explicabo accusantium excepturi eum molestias voluptas eius nihil.</p>
               <MainButton/>
-              <AltButton/>
             </div>
           </section>
         </main>

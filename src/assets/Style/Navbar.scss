@@ -33,6 +33,22 @@
     .link{
         color: $alt-fontColor;
         text-decoration: none;
+        position: relative;
+
+        &::before{
+            content: attr(data-hover);
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 0;
+            color: $sec-fontColor;
+            overflow: hidden;
+            transition: all .3s ease;
+        }
+
+        &:hover::before{
+            width: 100%;
+        }
     }
 }
 
