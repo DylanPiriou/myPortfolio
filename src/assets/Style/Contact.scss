@@ -31,8 +31,8 @@
             &::after{
                 content: "";
                 position: absolute;
-                bottom: -1%;
-                right: -8%;
+                bottom: 0;
+                right: -5%;
                 width: 20%;
                 aspect-ratio: 1;
                 background: $sec-fontColor;

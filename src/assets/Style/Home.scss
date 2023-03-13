@@ -26,20 +26,20 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
-    
-        h1{
-            font-size: clamp(55px, 14vw, 160px);
-            mix-blend-mode: difference;
-    
-            .edited{
-                color: #CFFF20;
+
+            h1{
+                font-size: clamp(55px, 14vw, 160px);
+                mix-blend-mode:difference;
+        
+                .edited{
+                    color: #CFFF20;
+                }
             }
-        }
-    
-        p{
-            font-size: 14px;
-            color: $alt-fontColor;
+        
+            p{
+                font-size: 14px;
+                color: $alt-fontColor;
+            }
         }
     
         .scroll-info{
