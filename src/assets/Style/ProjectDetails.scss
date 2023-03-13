@@ -96,25 +96,6 @@
                 align-items: center;
                 justify-content: flex-start;
                 gap: 10px;
-
-                button,
-                .github-btn{
-                    padding: 10px 20px;
-                    font-family: $font-family;
-                    border-radius: 50px;
-                    background: none;
-                    font-size: 20px;
-                }
-
-                .github-btn{
-                    color: $main-fontColor;
-                    border: 2px solid $main-fontColor;
-                }
-
-                button{
-                    color: $sec-fontColor;
-                    border: 2px solid $sec-fontColor;
-                }
             }
         }
     }

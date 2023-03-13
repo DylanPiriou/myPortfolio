@@ -1,0 +1,30 @@
+@import "./Settings.scss";
+
+.main-btn{
+    border: none;
+    outline: 2px solid $sec-fontColor;
+    border-radius: 50px;
+    display: block;
+    margin-top: 100px;
+    padding: 15px 50px;
+    background: none;
+    cursor: pointer;
+    transition: background .5s ease;
+    
+    a{
+        font-family: $font-family;
+        text-decoration: none;
+        font-size: 20px;
+        color: $sec-fontColor;
+        transition: color .5s ease;
+    }
+
+    &:hover{
+        background: $sec-fontColor;
+
+    }
+
+    &:hover a{
+        color: black;
+    }
+}

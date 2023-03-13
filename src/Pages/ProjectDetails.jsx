@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import Data from "../Data/data.json";
 import "../assets/Style/ProjectDetails.scss";
 import Navbar from '../Components/Navbar';
+import MainButton from '../Components/MainButton';
+import AltButton from '../Components/AltButton';
 
 export default function ProjectDetails() {
     const { id } = useParams();
@@ -39,8 +41,8 @@ export default function ProjectDetails() {
             </ul>
             <p>{projectsData.description}</p>
             <div className="buttons-box">
-              <button>Contact me</button>
-              <button className="github-btn">Check on GitHub</button>
+              <MainButton/>
+              <AltButton/>
             </div>
           </div>
         </div>
