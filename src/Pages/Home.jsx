@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar';
 import "../assets/Style/Home.scss";
 import { getYear } from '../utils/getYear';
-import { NavLink } from 'react-router-dom';
 import MainButton from '../Components/MainButton';
-import AltButton from '../Components/AltButton';
+import Loader from '../Components/Loader';
 
 export default function Home() {
+  // Gestion du loader
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 1000);
+  }, [])
+
   return (
+    <>
+    {isLoading ? <Loader/> : (
     <div className="home">
         <Navbar/>
         <header>
@@ -39,5 +49,7 @@ export default function Home() {
           </section>
         </main>
     </div>
+    )}
+    </>
   )
 }

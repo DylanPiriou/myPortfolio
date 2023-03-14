@@ -1,0 +1,32 @@
+@import "./settings.scss";
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+     span{
+        font-size: 5em;
+        color: rgb(63, 63, 63);
+        position: relative;
+
+        &::before{
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 7em;
+            color: $sec-fontColor;
+            overflow: hidden;
+            animation: loading 1s linear;
+
+            @keyframes loading{
+                0%{
+                    width: 0;
+                }
+            }
+        }
+    }
+}
