@@ -1,0 +1,9 @@
+@import "../Style/Settings.scss";
+
+.cursor{
+    position: absolute;
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid $sec-fontColor;
+}

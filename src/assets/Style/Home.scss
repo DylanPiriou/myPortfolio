@@ -11,6 +11,7 @@
             bottom: 0;
             width: 36vw;
             max-width: 822px;
+            min-width: 280px;
             height: 100vh;
             object-fit: cover;
             filter: grayscale(5);
@@ -30,9 +31,19 @@
             h1{
                 font-size: clamp(55px, 14vw, 160px);
                 mix-blend-mode:difference;
+                animation: animTitle 1.5s ease;
                 
                 .edited{
                     color: #CFFF20;
+                }
+
+                @keyframes animTitle {
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
                 }
             }
         

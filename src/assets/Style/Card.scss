@@ -42,7 +42,11 @@
         background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.05));
 
         h3{
-            font-size: 30px;
+            font-size: clamp(24px, 2vw, 30px);
+        }
+
+        p{
+            font-size: 14px;
         }
     }
 

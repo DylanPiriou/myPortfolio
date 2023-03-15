@@ -4,6 +4,7 @@ import "../assets/Style/Home.scss";
 import { getYear } from '../utils/getYear';
 import MainButton from '../Components/MainButton';
 import Loader from '../Components/Loader';
+import Cursor from '../Components/Cursor';
 
 export default function Home() {
   // Gestion du loader
@@ -19,6 +20,7 @@ export default function Home() {
     <>
     {isLoading ? <Loader/> : (
     <div className="home">
+        <Cursor/>
         <Navbar/>
         <header>
           <img src="main-hero.jpg" className="main-img" alt="person from the back looking at the horizon" />
