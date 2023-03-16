@@ -1,0 +1,58 @@
+@import "./Settings.scss";
+
+// h1{
+//     mix-blend-mode: difference;
+//     font-size: clamp(60px, 14vw, 160px);
+
+//     .serif-font{
+//         font-family: $alt-ffamily;
+                                            
+//     }
+
+//     .colored-font{
+//         color: $sec-fontColor;
+//     }
+// }
+
+.container {
+    height: clamp(300px, 40vw, 500px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+
+    .texte {
+        width: 100%;
+        height: clamp(75px, 13vw, 150px);
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        white-space: nowrap;
+        margin-bottom: -20px;
+        overflow: hidden;
+    
+        h2{
+            font-size: clamp(40px, 12vw, 140px);
+
+            .serif-font{
+                font-size: clamp(60px, 12vw, 140px);
+                font-family: $alt-ffamily;
+            }
+    
+            .colored-font{
+                font-size: clamp(60px, 12vw, 140px);
+                color: $sec-fontColor;
+                text-align: center;
+            }
+        }
+      }
+
+      .texte:nth-child(3){
+        align-items: center;
+        justify-content: flex-end;
+      }
+  }
+  
+  

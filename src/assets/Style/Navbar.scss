@@ -3,16 +3,17 @@
 .navbar{
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    max-width: 1920px;
+    max-width: 1220px;
     height: 12vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // background: $main-bgColor;
     padding: 0 5vw;
-    background: $main-bgColor;
-    z-index: 1;
+    z-index: 1000;
 
     nav{
         display: flex;
@@ -23,6 +24,7 @@
 
     .home-title{
         color: $main-fontColor;
+        mix-blend-mode: overlay;
         text-decoration: none;
 
         .edited{
@@ -86,7 +88,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
