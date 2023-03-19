@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Navbar from '../Components/Navbar';
 import PageTitle from '../Components/PageTitle';
 import "../assets/Style/Contact.scss";
 import Networks from '../Components/Networks';
+import { gsap } from "gsap";
 
 export default function Contact() {
   const title = {
     firstWord: "Open",
     secondWord: "for work"
   }
+
+  // Gestion de l'animation
+  const contact = useRef();
+  useEffect(() => {
+    gsap.fromTo(contact.current, {
+      opacity: 0
+    }, {
+      opacity: 1,
+      duration: 2
+    })
+  }, [])
+
   return (
-    <div className="contact">
+    <div className="contact" ref={contact}>
       <Navbar/>
       <div className="contact-container">
         <PageTitle title={title} />
