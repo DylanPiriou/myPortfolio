@@ -3,14 +3,14 @@
 .about-container{
     position: absolute;
     right: 0;
-    width: 680px;
+    width: 880px;
     margin-bottom: 10vh;
-    background: rgb(14, 14, 14);
+    background: $main-bgColor;
 
     .about-content{
         width: 100%;
         height: 100%;
-        padding: 50px;
+        padding: 80px;
         position: relative;
 
         &::before{
@@ -25,13 +25,24 @@
         }
 
         h2{
-            font-size: 100px;
+            font-size: clamp(60px, 6vw, 100px);
             margin-bottom: 20px;
         }
 
         p{
             line-height: 25px;
             font-size: 14px;
+            color: $alt-fontColor;
+        }
+    }
+}
+
+@media (max-width: 950px){
+    .about-container{
+        width: 100%;
+
+        .about-content{
+            padding: 80px 40px;
         }
     }
 }

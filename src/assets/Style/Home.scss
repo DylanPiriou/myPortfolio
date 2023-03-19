@@ -30,35 +30,6 @@
                 color: $alt-fontColor;
             }
         }
-    
-        .scroll-info{
-            position: absolute;
-            bottom: 5vh;
-            right: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: center;
-            gap: 50px;
-    
-            .arrow-icon{
-                height: 60px;
-                animation: arrow-movement 2s ease-in-out infinite;
-            }
-    
-            @keyframes arrow-movement {
-                0% {
-                  transform: translateY(0);
-                }
-                50% {
-                  transform: translateY(-40px);
-                }
-                100% {
-                  transform: translateY(0);
-                }
-              }
-        }
-    
     }
 
 
@@ -66,6 +37,12 @@
         position: relative;
         background: red;
         margin-top: 15vh; 
+    }
+}
+
+@media (max-width: 950px){
+    .main-img{
+        filter:brightness(50%) grayscale(10); 
     }
 }
 

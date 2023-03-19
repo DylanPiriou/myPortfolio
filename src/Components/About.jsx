@@ -2,9 +2,13 @@ import React, { useEffect, useRef } from 'react';
 import MainButton from './MainButton';
 import "../assets/Style/About.scss";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 export default function About() {
+    gsap.registerPlugin(ScrollTrigger);
     const about = useRef();
+
 
     useEffect(() => {
         gsap.fromTo(about.current, {
@@ -14,9 +18,12 @@ export default function About() {
             x: 0,
             opacity: 1,
             duration: 1,
-            delay: 1
-        })
-    }, [])
+            scrollTrigger: {
+                trigger: about.current,
+                start: "top 45%"
+            }
+        }
+    )}, [])
 
   return (
     <section className="about-container" id="about" ref={about}>

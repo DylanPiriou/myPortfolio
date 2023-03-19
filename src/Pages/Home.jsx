@@ -6,6 +6,8 @@ import Loader from '../Components/Loader';
 import Cursor from '../Components/Cursor';
 import HomeTitle from '../Components/HomeTitle';
 import About from '../Components/About';
+import ScrollIndicator from '../Components/ScrollIndicator';
+import { gsap } from "gsap";
 
 export default function Home() {
   // Gestion du loader
@@ -16,6 +18,18 @@ export default function Home() {
       setIsLoading(false)
     }, 1000);
   }, [])
+
+  // Gestion de l'animation
+  useEffect(() => {
+    gsap.fromTo(".main-img", {
+      opacity: 0
+    }, {
+      opacity: 1,
+      duration: 5
+    })
+  }, [!isLoading])
+
+
 
   return (
     <>
@@ -29,10 +43,7 @@ export default function Home() {
             <HomeTitle/>
             <p>Welcome to my {getYear()} portfolio.</p>
           </div>
-          <div className="scroll-info">
-            <img src="arrow.svg" className="arrow-icon" alt="" />
-            <p>SCROLL TO DISCOVER ME</p>
-          </div>
+          <ScrollIndicator/>
         </header>
         <main>
           <About/>

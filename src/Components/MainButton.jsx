@@ -5,7 +5,7 @@ import "../assets/Style/MainButton.scss";
 export default function MainButton() {
   return (
     <button className="main-btn">
-        <NavLink to="/contact">Contact me</NavLink>
+        <NavLink to="/contact"><span>Contact me</span></NavLink>
     </button>
   )
 }
