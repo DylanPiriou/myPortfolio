@@ -4,7 +4,7 @@ import "../assets/Style/AltButton.scss";
 export default function AltButton() {
   return (
     <button className="alt-btn">
-        <a href="#">Check on GitHub</a>
+        <a href="#">CHECK ON GITHUB</a>
     </button>
   )
 }

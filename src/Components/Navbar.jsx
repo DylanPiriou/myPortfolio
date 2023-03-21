@@ -47,10 +47,11 @@ export default function Navbar() {
     
 
   return (
-    <div className="navbar" ref={navbar}>
+    <div className="navbar-container" ref={navbar}>
+      <div className="navbar">
         <NavLink to="/" className="home-title">@dylanpiriou/<span className="edited">{param}</span></NavLink>
         <nav ref={nav}>
-            <a href="#about" className="link" data-hover="ABOUT">ABOUT</a>
+            <a href="/#about" className="link" data-hover="ABOUT">ABOUT</a>
             <NavLink to="/projects" className="link" data-hover="PROJECTS">PROJECTS</NavLink>
             <NavLink to="/contact" className="link" data-hover="CONTACT">CONTACT</NavLink>
         </nav>
@@ -58,6 +59,7 @@ export default function Navbar() {
           <span className="line" id="top"></span>
           <span className="line" id="bottom"></span>
         </div>
+      </div>
     </div>
   )
 }

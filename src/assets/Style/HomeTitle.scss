@@ -18,8 +18,8 @@
     height: clamp(300px, 40vw, 500px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     overflow: hidden;
     gap: 10px;
 

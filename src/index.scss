@@ -14,14 +14,8 @@ body{
     width: 100%;
     max-width: 1420px;
     margin: 0 auto;
-    // padding: 0 15vw;
     font-family: $font-family;
     color: $main-fontColor;
     background: $main-bgColor;
-}
-
-@media (max-width: 700px) {
-    body{
-        padding: 0;
-    }
+    overflow-x: hidden;
 }

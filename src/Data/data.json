@@ -3,7 +3,7 @@
         "id": 1,
         "title": "MovieHub",
         "subtitle": "Cinema application like Netflix.",
-        "cover": "/img-template.jpg",
+        "cover": "/moviehub.png",
         "tags": [
             "HTML5",
             "CSS3",
@@ -48,7 +48,7 @@
         "id": 4,
         "title": "Kasa website",
         "subtitle": "Real estate rental web application.",
-        "cover": "/img-template.jpg",
+        "cover": "/kasa.png",
         "tags": [
             "HTML5",
             "CSS3",

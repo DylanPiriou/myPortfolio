@@ -4,6 +4,7 @@ import PageTitle from '../Components/PageTitle';
 import "../assets/Style/Contact.scss";
 import Networks from '../Components/Networks';
 import { gsap } from "gsap";
+import Form from '../Components/Form';
 
 export default function Contact() {
   const title = {
@@ -36,6 +37,7 @@ export default function Contact() {
           <Networks/>
         </div>
         <div className="content-box"></div>
+        <Form/>
       </div>
     </div>
   )

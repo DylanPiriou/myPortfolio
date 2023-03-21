@@ -1,35 +1,43 @@
 @import "./Settings.scss";
 
 .scroll-info{
+    width: 280px;
     position: absolute;
     bottom: 5vh;
     right: 0;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 50px;
-    padding-right: 5vw;
     color: $alt-fontColor;
+    overflow: hidden;
+    
+    // .arrow-icon{
+      //     height: clamp(40px, 6vw, 60px);
+      //     animation: arrow-movement 2s ease-in-out infinite;
+      // }
+      
+      p{
+        font-size: clamp(10px, 2vw, 16px);
+        white-space: nowrap;
+        animation: scroll 3s linear infinite;
 
-    .arrow-icon{
-        height: clamp(40px, 6vw, 60px);
-        animation: arrow-movement 2s ease-in-out infinite;
+        @keyframes scroll {
+          0%{
+            transform: translateX(0);
+          }
+          100%{
+            transform: translateX(-100%);
+          }
+        }
     }
 
-    p{
-      font-size: clamp(10px, 2vw, 16px);
-    }
-
-    @keyframes arrow-movement {
-        0% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-40px);
-        }
-        100% {
-          transform: translateY(0);
-        }
-      }
+    // @keyframes arrow-movement {
+    //     0% {
+    //       transform: translateY(0);
+    //     }
+    //     50% {
+    //       transform: translateY(-40px);
+    //     }
+    //     100% {
+    //       transform: translateY(0);
+    //     }
+    //   }
 }

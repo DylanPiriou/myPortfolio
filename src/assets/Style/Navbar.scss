@@ -1,82 +1,95 @@
 @import "./Settings.scss";
 
-.navbar{
+.navbar-container{
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 100%;
-    max-width: 1420px;
     height: 12vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    // background: $main-bgColor;
-    padding: 0 5vw;
+    justify-content: center;
     z-index: 1000;
-
-    nav{
+    
+    .navbar{
+        width: 100%;
+        max-width: 1420px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 2vw;
+        justify-content: space-between;
+    
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2vw;
+        }
+    
+        .home-title{
+            color: $main-fontColor;
+            text-decoration: none;
+    
+            .edited{
+                color: $sec-fontColor;
+            }
+        }
+    
+        .link{
+            color: $alt-fontColor;
+            text-decoration: none;
+            position: relative;
+    
+            &:last-child{
+                padding: 10px 35px;
+                border: 1px solid $sec-fontColor;
+                border-radius: 50px;
+                color: $sec-fontColor;
+            }
+    
+            &::before{
+                content: attr(data-hover);
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 0;
+                color: $sec-fontColor;
+                overflow: hidden;
+                transition: all .2s ease;
+            }
+    
+            &:not(:last-child):hover::before{
+                width: 100%;
+            }
+        }
+    
+        .burger-menu{
+            width: 40px;
+            aspect-ratio: 1;
+            position: relative;
+            display: none;
+            
+    
+            .line{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 60%;
+                height: 2px;
+                background: $main-fontColor;
+            }
+    
+            .line:nth-child(1){
+                top: 40%;
+            }
+    
+            .line:nth-child(2){
+                top: 60%;
+            }
+        }
+
     }
-
-    .home-title{
-        color: $main-fontColor;
-        text-decoration: none;
-
-        .edited{
-            color: $sec-fontColor;
-        }
-    }
-
-    .link{
-        color: $alt-fontColor;
-        text-decoration: none;
-        position: relative;
-
-        &::before{
-            content: attr(data-hover);
-            position: absolute;
-            left: 0;
-            right: 0;
-            width: 0;
-            color: $sec-fontColor;
-            overflow: hidden;
-            transition: all .2s ease;
-        }
-
-        &:hover::before{
-            width: 100%;
-        }
-    }
-
-    .burger-menu{
-        width: 40px;
-        aspect-ratio: 1;
-        position: relative;
-        display: none;
-        
-
-        .line{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60%;
-            height: 2px;
-            background: $main-fontColor;
-        }
-
-        .line:nth-child(1){
-            top: 40%;
-        }
-
-        .line:nth-child(2){
-            top: 60%;
-        }
-    }
+    
 
     @media (max-width: 750px){
         nav{
@@ -92,7 +105,7 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            padding-left: 35px;
+            padding-left: 45px;
             background: $main-bgColor;
 
             &::before{
@@ -107,6 +120,9 @@
 
             .link{
                 font-size: 50px;
+                padding: 0;
+                border: none;
+                color: $alt-fontColor;
             }
         }
         .burger-menu{

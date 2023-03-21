@@ -9,14 +9,16 @@ export default function ScrollIndicator() {
         opacity: 0
       }, {
         opacity: 1,
-        duration: 1,
-        delay: 1
+        duration: 1
       })
     }, [])
   return (
     <div className="scroll-info" ref={scrollInfo}>
-        <img src="arrow.svg" className="arrow-icon" alt="" />
-        <p>SCROLL TO DISCOVER ME</p>
+        {/* <img src="arrow.svg" className="arrow-icon" alt="" /> */}
+        <p> - SCROLL TO DISCOVER ME&nbsp;</p>
+        <p> - SCROLL TO DISCOVER ME&nbsp;</p>
+        <p> - SCROLL TO DISCOVER ME&nbsp;</p>
+        <p> - SCROLL TO DISCOVER ME&nbsp;</p>
     </div>
   )
 }
